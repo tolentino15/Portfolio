@@ -1,0 +1,166 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* NAVBAR */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: rgb(10, 10, 10);
+    font-family: sans-serif;
+    padding: 15px 0;
+    z-index: 999;
+}
+
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.navbar .logo a{
+    color:rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.navbar .logo a span{
+    color:rgb(38, 119, 38);
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: rgb(38, 119, 38);
+}
+
+/* HOME */
+
+.home{
+    display: flex;
+    background-color:rgb(38, 119, 38) ;
+    height: 100vh;
+    color: rgb(10,10,10);
+    min-height: 500px;
+    font-family: sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .texto-1{
+    font-size: 20px;
+}
+
+.home .home-content .texto-2{
+    font-size: 65px;
+    font-weight: 500;
+    margin-left: -3px;
+}
+
+.home .home-content .texto-3{
+    font-size: 27px;
+    margin: 5px 0;
+}
+
+.home .home-content .texto-3 span{
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background:rgb(10, 10, 10);
+    color: white;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.home .home-content a:hover{
+    background: none;
+    color:rgb(255, 255, 255);
+}
+
+/* SOBRE */
+
+section{
+    padding: 100px 0;
+}
+
+.sobre{
+    font-family: sans-serif;
+}
+
+.sobre .sobre-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre .titulo{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.sobre .titulo::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: rgb(10, 10, 10);
+    transform: translateX(-50%);
+}
+
+.sobre .titulo::after{
+    content: "Quem sou...";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    background:rgb(255, 255, 255);
+    color: rgb(10, 10, 10);
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+.sobre .sobre-content img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 300px;
+}
