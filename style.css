@@ -37,7 +37,7 @@
 }
 
 .navbar .logo a span{
-    color:rgb(38, 119, 38);
+    color:rgb(30, 255, 0);
 }
 
 .navbar .menu li{
@@ -54,18 +54,19 @@
 }
 
 .navbar .menu li a:hover{
-    color: rgb(38, 119, 38);
+    color: rgb(30, 255, 0);
 }
 
 /* HOME */
 
 .home{
     display: flex;
-    background-color:rgb(38, 119, 38) ;
-    height: 100vh;
-    color: rgb(10,10,10);
+    background: url(darkforest.jpg) no-repeat center;
+    background-size: cover;
     min-height: 500px;
     font-family: sans-serif;
+    text-align:center;
+    height: 100vh;
 }
 
 .home .max-width{
@@ -73,59 +74,77 @@
 }
 
 .home .home-content .texto-1{
+    
+    color: white;
     font-size: 20px;
 }
 
 .home .home-content .texto-2{
+    color: white;
     font-size: 65px;
     font-weight: 500;
     margin-left: -3px;
 }
 
 .home .home-content .texto-3{
+    color: white;
     font-size: 27px;
     margin: 5px 0;
 }
 
 .home .home-content .texto-3 span{
-    color:rgb(255, 255, 255);
+    color:rgb(30, 255, 0);
     font-weight: 500;
 }
 
 .home .home-content a{
     display: inline-block;
-    background:rgb(10, 10, 10);
-    color: white;
+    background:rgb(30, 255, 0);
+    color: rgb(10, 10, 10);
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 10px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(30, 255, 0);
 }
 
 .home .home-content a:hover{
-    background: none;
-    color:rgb(255, 255, 255);
+    background: rgb(10, 10, 10);
+    color:rgb(30, 255, 0);
+    border-color: rgb(30, 255, 0);
+    transition: all 0.3s ease;
 }
 
 /* SOBRE */
 
 section{
     padding: 100px 0;
+    background-color: rgb(25, 26, 28);
+}
+
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgb(25, 26, 28),transparent);
+    z-index: 1000;
 }
 
 .sobre{
     font-family: sans-serif;
+    
 }
 
-.sobre .sobre-content{
+.sobre .sobre-conteudo{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
 }
 
 .sobre .titulo{
+    color: white;
     font-family: sans-serif;
     text-align: center;
     font-size: 40px;
@@ -142,7 +161,7 @@ section{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: rgb(10, 10, 10);
+    background: white;
     transform: translateX(-50%);
 }
 
@@ -152,15 +171,60 @@ section{
     bottom: -12px;
     left: 50%;
     font-size: 20px;
-    background:rgb(255, 255, 255);
-    color: rgb(10, 10, 10);
+    background:rgb(25, 26, 28);
+    color: white;
     padding: 5px;
     transform: translateX(-50%);
 }
 
-.sobre .sobre-content img{
-    width: 300px;
-    height: 300px;
+.sobre .sobre-conteudo .coluna-e{
+    width: 45%;
+}
+
+.sobre .sobre-conteudo .coluna-e img{
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     border-radius: 300px;
+ 
+}
+
+.sobre .sobre-conteudo .coluna-d{
+    padding-left: 30px;
+    width: 55%;
+}
+
+.sobre .sobre-conteudo .coluna-d .texto{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;  
+}
+
+.sobre .sobre-conteudo .coluna-d p{
+    color: white;
+font-size: 15px;
+margin-bottom: 20px;
+}
+
+.sobre .sobre-conteudo .coluna-d span{
+    color: rgb(30, 255, 0);
+}
+
+.sobre .sobre-conteudo .coluna-d a{
+    display: inline-block;
+    background-color: rgb(30, 255, 0);
+    color: rgb(25, 26, 28);
+    font-size: 20px;
+    font-weight: 500px;
+    border-radius: 10px;
+    padding: 10px 30px;
+    border: 2px solid rgb(30, 255, 0);
+    transition: all 0.3s ease;
+
+}
+
+.sobre .sobre-conteudo .coluna-d a:hover{
+    color: rgb(30, 255, 0);
+    background: none;
 }
